@@ -105,7 +105,18 @@ The right side of the screen has some global widgets (top to bottom)
 
 ## non features
 
-(stuff this project is not about)
+(stuffs this project is not about)
 
 - live loop recording
-- feature outside of current bitwig' osc API
+- features outside of current bitwig' OSC API
+- anything bloaty (if it's not easily implemented path/messaging, it doesn't belong here)
+- I'm planning to experiment with a bunch of GUI approaches in this project
+- the longer goal is a performance tool, this means : 
+  - no tiny screen support
+  - no legacy support (touchosc is very fast and reliable on many stuff though)
+  - no "discoverability"
+  
+- Feel free to open issues.
+- Feel free to fork the project 
+- (but don't submit PR until I can figure some way to version the template as an XML file, tosc is to painful)
+  
