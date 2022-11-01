@@ -34,8 +34,10 @@ Install drivenbymoss extension. Set IP addresses.
 You should not be too lost here :)
 
 - 🔴 : arm track
-- 📢 : solo track
+- 🎧 : solo/cue
 - ❌ : mute track
+- 📢 : monitor track
+- 🟩 : automonitor
 
 You can select a track by tapping its name.
 
