@@ -1,6 +1,6 @@
 # ludwig
 
-complete and visually pleasing moss osc implem
+complete and visually pleasing moss osc template.
 
 This is a WIP, expect general unreliability, don't bring it on stage (yet).
 
@@ -29,52 +29,18 @@ Install drivenbymoss extension. Set IP addresses.
 - Set "exclude deactivated item" to **on**.
 - other stuffs can be set to your taste
 
-## pager (the top half)
+## mixer
 
-To navigate the pager you need to double tap
-
-### device
-
-Control the currently selected device.
-
-#### icons (top left)
-
-- 🟠 : bypass
-- 📌 : pin the device
-- ➕ : maximize device
-- 🎮 : display the "8-knob" section
-
-#### page selector
-
-The green text is the current page.
-
-Tap the red ones to switch pages
-
-Controls are self-explanatory
-
-### markers
-
-Tap marks to put playhead (or start playback) on the markers.
-
-### clips
-
-Tap a clip to play it
-
-Tap an empty clip or the triangles at the bottom to stop.
-
-Red arrows scroll 8 scenes, orange arrows scroll 1 scene at a time.
-
-### user
-
-Set your user mapping in this tab
-
-## mixer (the bottom part)
+You should not be too lost here :)
 
 - 🔴 : arm track
 - 📢 : solo track
 - ❌ : mute track
 
 You can select a track by tapping its name.
+
+You can scroll across pages in the mixer using the red arrows 
+in the bottom right
 
 ### send panel
 
@@ -87,6 +53,40 @@ You can "dig" a group by tapping "group" under the pan knob.
 
 If you're already inside a group, you can get back to its parent using the 
 "rewind" (⏪) at the left of the 1st track title
+
+## device
+
+Control the currently selected device.
+
+### icons (top left)
+
+- 🟠 : bypass
+- 📌 : pin the device
+- ➕ : maximize device
+- 🎮 : display the "8-knob" section
+- 🔲 : display the popup window (3rd parties, eq, grid, ...)
+
+Your too many pages can be browsed on the right
+
+You can access prev/next device with the red arrows near the device faders.
+
+Note: this ignore the pinned status, this is a bug (or maybe just a surprising behavior)
+on bitwig api (ie. not fixing it) (the pin status works normally in the DAW though)
+
+### clips
+
+Tap a clip to play it
+
+Tap an empty clip or the stop button at the bottom to stop.
+
+Red arrows scroll 8 scenes, orange arrows scroll 1 scene at a time.
+
+### cues / mappings
+
+cues are the timeline marks you're adding on your timeline, displayed in chronological
+order. (use the red arrow to page across those if you have that many)
+
+mapping the tiny orange hand on the bottom right, just a bunch of custom fader for you.
 
 ## misc
 
@@ -110,7 +110,6 @@ The right side of the screen has some global widgets (top to bottom)
 - live loop recording
 - features outside of current bitwig' OSC API
 - anything bloaty (if it's not easily implemented path/messaging, it doesn't belong here)
-- I'm planning to experiment with a bunch of GUI approaches in this project
 - the longer goal is a performance tool, this means : 
   - no tiny screen support
   - no legacy support (touchosc is very fast and reliable on many stuff though)
