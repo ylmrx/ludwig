@@ -25,8 +25,8 @@ You _need_ :
 Install drivenbymoss extension. Set IP addresses.
 
 - Resolution **must** be set at 1024 (medium)
-- Bank **must** be set to 8
-- Set "exclude deactivated item" to **on**.
+- Bank **must** be set to 8 (this is the default)
+- (Set "exclude deactivated item" to **on**) < this should work
 - other stuffs can be set to your taste
 
 ## mixer
@@ -68,12 +68,13 @@ Control the currently selected device.
 - 🎮 : display the "8-knob" section
 - 🔲 : display the popup window (3rd parties, eq, grid, ...)
 
-Your too many pages can be browsed on the right
+Your too many pages can be browsed on the upper right
 
-You can access prev/next device with the red arrows near the device faders.
+The other effects on the same track are on the bottom
 
-Note: this ignore the pinned status, this is a bug (or maybe just a surprising behavior)
-on bitwig api (ie. not fixing it) (the pin status works normally in the DAW though)
+You can also access neighboring track from the vertical menu on the righ
+
+TODO: manage the layers too.
 
 ### clips
 
@@ -104,6 +105,11 @@ The right side of the screen has some global widgets (top to bottom)
 - blue square : loop
 - Red arrows : scroll the mixer and clips (8 tracks at a time)
 - orange square : master mute
+
+## planned stuff
+
+- ballistic (aka smoother animation) on vu, and modulators
+- some transition, as page based browsing can be confusing
 
 ## non features
 
