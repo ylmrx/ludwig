@@ -4,14 +4,30 @@ complete and visually pleasing moss osc template.
 
 You _need_ :
 - a recent bitwig and latest drivenbymoss extensions
-- a valid touchosc setup
+- a valid touchosc setup (fairly well explained on youtube)
+
+## major changes
+
+### `0.1a` : first public release
+
+ditto
+
+### `0.2` : implement better looking fader
+
+- version code in xml now (new in touchosc desktop version)
+- GUI fader pots (thanks to RahulDJ on "TouchOSC templates makers" facebook community
+- general fader "block" rework
+- better color logic (unified across the whole project)
+- fix some font render issues (related to touchosc font engines)
+- address new clip launcher behavior (bitwig5)
+- Colors on user mapping to better differentiate them with bw gui
 
 ## features
 
 - Reliably working touchosc environment, featuring most mixing oriented features.
-- vu-meters
+- vu-meters with clip display
 - complete metadatas (metric, names, color)
-- watch modulated controls in real time
+- watch modulated controls in real time where it matters
 - check your markers at a glance
 - devices control across pages
 - complete send matrices (even across layers)
@@ -89,7 +105,7 @@ Tap an empty clip or the stop button at the bottom to stop.
 
 Red arrows scroll 8 scenes, orange arrows scroll 1 scene at a time.
 
-### cues / mappings
+### mappings
 
 cues are the timeline marks you're adding on your timeline, displayed in chronological
 order. (use the red arrow to page across those if you have that many)
@@ -112,10 +128,6 @@ The right side of the screen has some global widgets (top to bottom)
 - Red arrows : scroll the mixer and clips (8 tracks at a time)
 - orange square : master mute
 
-## planned stuff
-
-- ballistic (aka smoother animation) on vu, and modulators
-
 ## non features
 
 (stuffs this project is not about)
@@ -131,4 +143,9 @@ The right side of the screen has some global widgets (top to bottom)
 - Feel free to open issues.
 - Feel free to fork the project 
 - (but don't submit PR until I can figure some way to version the template as an XML file, tosc is to painful)
+
+## todo
+
+implements features around the AltMode (new in bw5) for many controls.
+
   
