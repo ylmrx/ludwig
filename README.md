@@ -22,6 +22,11 @@ ditto
 - address new clip launcher behavior (bitwig5)
 - Colors on user mapping to better differentiate them with bw gui
 
+### `0.3`: add action pop-up menu
+
+- adds action menu
+- fix many cosmetic issues
+
 ## features
 
 - Reliably working touchosc environment, featuring most mixing oriented features.
@@ -117,7 +122,8 @@ custom fader for you. they still display their names and modulation status.
 
 The right side of the screen has some global widgets (top to bottom)
 
-- the green bar at the top is the master vu.
+- the action pop-up menu (set the behavior of the 8 buttons with in extension settings)
+- the master vu.
 - 🟢: forces an update, bitwig will send its entire osc state, use this in case of crash
 - purple square : current tempo
 - blue square : current beat
